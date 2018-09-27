@@ -1,0 +1,11 @@
+---
+applications:
+- name: mockedapiservice
+  buildpack: nodejs_buildpack
+  stack: cflinuxfs2
+  command: node index.js
+  instances: 1
+  memory: 64M
+  timeout: 80
+  env:
+    ASPNETCORE_ENVIRONMENT: Development
